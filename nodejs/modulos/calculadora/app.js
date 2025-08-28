@@ -1,4 +1,5 @@
 const funcoes = require('./funcoes_matematicas');
+const calculadora_idade = require('./calculadora_idade');
 
 const resultadoSoma = funcoes.soma(5, 3);
 console.log(`Soma: ${resultadoSoma}`);
@@ -11,3 +12,5 @@ console.log(`Multiplicação: ${resultadoMultiplicacao}`);
 
 const resultadoDivisao = funcoes.divide(169, 13);
 console.log(`Divisão: ${resultadoDivisao}`);
+
+console.log(calculadora_idade.idade("João", 1990, 2050));
