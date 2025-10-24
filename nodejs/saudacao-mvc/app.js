@@ -13,14 +13,14 @@ app.use(express.urlencoded({ extended: true }));
 const indexRoutes = require('./routes/index');
 app.use('/', indexRoutes);
 
-const userRoutes = require('./routes/users');
-app.use('/users', userRoutes);
-
-const produtoRoutes = require('./routes/produtos');
-app.use('/produtos', produtoRoutes);
+const produtosRoutes = require('./routes/produtos');
+app.use('/produtos', produtosRoutes);
 
 const clientesRoutes = require('./routes/clientes');
 app.use('/clientes', clientesRoutes);
+
+const usuariosRoutes = require('./routes/usuarios');
+app.use('/usuarios', usuariosRoutes);
 
 // Servidor
 app.listen(port, () => {
